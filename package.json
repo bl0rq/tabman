@@ -1,0 +1,7 @@
+{
+  "name": "tabman",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node test/normalizeUrl.test.js"
+  }
+}
