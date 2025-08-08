@@ -1,3 +1,11 @@
-// In background.js
+// Popup script to trigger regrouping of tabs
 
-// Get all open tabs and group them by domain
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.getElementById('regroup');
+  if (!button) return;
+
+  button.addEventListener('click', () => {
+    chrome.runtime.sendMessage({ action: 'regroup' });
+  });
+});
+
