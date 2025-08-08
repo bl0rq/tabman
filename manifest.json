@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Tabman",
+  "version": "0.1",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
